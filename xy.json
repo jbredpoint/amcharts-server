@@ -3,8 +3,8 @@
     "xAxes": [
         {
             "type":"CategoryAxis",
-            "dataFields":{
-                "category":"country"
+            "dataFields": {
+                "category": "country"
             },
             "title": {
                 "text": "Local country offices"
@@ -24,7 +24,7 @@
             "type": "ValueAxis",
             "title": {
                 "text": "Expenditure (M)"
-            },
+            }
         }
     ],
     "series": [
