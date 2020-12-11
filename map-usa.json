@@ -1,0 +1,21 @@
+{
+    "geodata": "usaLow",
+    "projection": "Miller",
+    "series": [
+        {
+            "type": "MapPolygonSeries",
+            "useGeodata": true,
+            "mapPolygons": {
+                "tooltipText": "{name}",
+                "fill": "#6794dc",
+                "nonScalingStroke": true
+            },
+            "states": {
+                "hover": {
+                "properties": {
+                    "fill": "#367B25"
+                }
+            }
+        }
+    }
+}
