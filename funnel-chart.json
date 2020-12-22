@@ -1,0 +1,58 @@
+{
+
+  "data": [{
+    "name": "The first",
+    "value": 600
+  }, {
+    "name": "The second",
+    "value": 300
+  }, {
+    "name": "The third",
+    "value": 200
+  }, {
+    "name": "The fourth",
+    "value": 180
+  }, {
+    "name": "The fifth",
+    "value": 50
+  }, {
+    "name": "The sixth",
+    "value": 20
+  }, {
+    "name": "The seventh",
+    "value": 10
+  }],
+
+  "hiddenState": {
+    "properties": {
+      "opacity": 0
+    }
+  },
+
+  "series": [{
+    "type": "FunnelSeries",
+    "alignLabels": true,
+    "dataFields": {
+      "value": "value",
+      "category": "name"
+    },
+    "colors": {
+      "step": 2
+    }
+  }],
+
+  "labelsContainer": {
+    "paddingLeft": 15,
+    "width": 200
+  },
+
+  "legend": {
+    "position": "left",
+    "valign": "bottom",
+    "marginTop": 5,
+    "marginRight": 5,
+    "marginBottom": 20,
+    "marginLeft": 5
+  }
+
+}
