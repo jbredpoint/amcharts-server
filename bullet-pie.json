@@ -1,5 +1,4 @@
 {
-
   "data": [{
     "country": "Lithuania",
     "units": 500,
@@ -40,13 +39,11 @@
       "title": "Cat #3"
     }]
   }],
-
   "hiddenState": {
     "properties": {
       "opacity": 0
     }
   },
-
   "xAxes": [{
     "type": "CategoryAxis",
     "dataFields": {
@@ -58,7 +55,6 @@
       }
     }
   }],
-
   "yAxes": [{
     "type": "ValueAxis",
     "title": {
@@ -74,7 +70,6 @@
       }
     }
   }],
-
   "series": [{
     "type": "ColumnSeries",
     "dataFields": {
@@ -99,8 +94,6 @@
           return color;
         }
       },
-
-      // pie
       "children": [{
         "type": "PieChart",
         "forceCreate": true,
@@ -146,5 +139,4 @@
       }]
     }
   }],
-
 }
