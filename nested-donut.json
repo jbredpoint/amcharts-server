@@ -24,8 +24,18 @@
     },
     "ticks": {
       "disabled": true
+    },
+    "colors": {
+      "list": [
+        "#6a2202",
+        "#bc7201",
+        "#e5ab09",
+        "#22180d",
+        "#0f1a26"
+      ]
     }
-  }, {
+  },
+  {
     "type": "PieSeries",
     "dataFields": {
       "value": "bottles",
@@ -43,6 +53,15 @@
           }
         }
       }
+    },
+    "colors": {
+      "list": [
+        "#014656",
+        "#00a2ad",
+        "#f9f7f6",
+        "#fdd65d",
+        "#f6a801"
+      ]
     }
   }],
   "data": [{
