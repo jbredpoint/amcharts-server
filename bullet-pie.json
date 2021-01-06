@@ -58,7 +58,7 @@
   "yAxes": [{
     "type": "ValueAxis",
     "title": {
-      "text": "Units sold (M)",
+      "text": "Units sold (M)"
     },
     "min": 0,
     "renderer": {
@@ -87,13 +87,6 @@
         "cornerRadiusTopRight": 20
       },
       "strokeOpacity": 0,
-      "adapter": {
-        "fill": function(fill, target) {
-          var chart = target.dataItem.component.chart;
-          var color = chart.colors.getIndex(target.dataItem.index * 3);
-          return color;
-        }
-      },
       "children": [{
         "type": "PieChart",
         "forceCreate": true,
@@ -119,15 +112,7 @@
           "slices": {
             "stroke": "#ffffff",
             "strokeWidth": 1,
-            "strokeOpacity": 0,
-            "adapter": {
-              "fill": function(fill, target) {
-                return am4core.color("#ffffff");
-              },
-              "fillOpacity": function(fillOpacity, target) {
-                return (target.dataItem.index + 1) * 0.2;
-              }
-            }
+            "strokeOpacity": 0
           },
           "hiddenState": {
             "properties": {
