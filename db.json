@@ -5,7 +5,19 @@
             "dataFields":{
                 "value":"litres",
                 "category":"country"
-            }
+            },
+            "colors": {
+                "list": [
+                    "#E68081",
+                    "#E06667",
+                    "#DC4D4D",
+                    "#D63333",
+                    "#CC0000",
+                    "#B80000",
+                    "#A30000",
+                    "#900000"
+                ]
+	          }
         }
     ],
     "data":[
