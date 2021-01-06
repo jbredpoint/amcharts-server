@@ -3,7 +3,6 @@
   "dateFormatter": {
     "inputDateFormat": "yyyy-MM-dd"
   },
-
   "xAxes": [{
     "type": "DateAxis",
     "renderer": {
@@ -12,14 +11,12 @@
       }
     }
   }],
-
   "yAxes": [{
     "type": "ValueAxis",
     "tooltip": {
       "disabled": true
     }
   }],
-
   "series": [{
     "type": "CandlestickSeries",
     "id": "s1",
@@ -29,6 +26,20 @@
       "openValueY": "open",
       "lowValueY": "low",
       "highValueY": "high"
+    },
+    "dropFromOpenState": {
+      "properties": {
+        "fill": "#1D5DC0",
+        "stroke": "#1D5DC0",
+        "drop": "#1D5DC0"
+      }
+    },
+    "riseFromOpenState": {
+      "properties": {
+        "fill": "#D12505",
+        "stroke": "#D12505",
+        "drop": "#D12505"
+      }
     },
     "tooltipText": "Open:${openValueY.value}\nLow:${lowValueY.value}\nHigh:${highValueY.value}\nClose:${valueY.value}"
   }, {
@@ -47,16 +58,13 @@
     "fillOpacity": 0.5,
     "strokeOpacity": 0.5
   }],
-
   "cursor": {
     "type": "XYCursor"
   },
-
   "scrollbarX": {
     "type": "XYChartScrollbar",
     "series": ["s2"]
   },
-
   "data": [{
     "date": "2011-08-01",
     "open": "136.65",
