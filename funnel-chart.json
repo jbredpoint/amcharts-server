@@ -1,5 +1,4 @@
 {
-
   "data": [{
     "name": "The first",
     "value": 600
@@ -22,13 +21,11 @@
     "name": "The seventh",
     "value": 10
   }],
-
   "hiddenState": {
     "properties": {
       "opacity": 0
     }
   },
-
   "series": [{
     "type": "FunnelSeries",
     "alignLabels": true,
@@ -37,15 +34,22 @@
       "category": "name"
     },
     "colors": {
-      "step": 2
+      "list": [
+        "#B3D069",
+        "#F192B8",
+        "#76B7AB",
+        "#B2A2A3",
+        "#91C54F",
+        "#EA7199",
+  	    "#D7BFBE",
+    	  "#92C0D2"
+      ]
     }
   }],
-
   "labelsContainer": {
     "paddingLeft": 15,
     "width": 200
   },
-
   "legend": {
     "position": "left",
     "valign": "bottom",
@@ -54,5 +58,4 @@
     "marginBottom": 20,
     "marginLeft": 5
   }
-
 }
