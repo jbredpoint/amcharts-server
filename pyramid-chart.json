@@ -1,6 +1,5 @@
 {
   "paddingBottom": 30,
-  
   "data": [{
     "name": "Stage #1",
     "value": 600
@@ -23,7 +22,6 @@
     "name": "Stage #7",
     "value": 280
   }],
-  
   "series": [{
     "type": "PyramidSeries",
     "dataFields": {
@@ -31,6 +29,18 @@
       "category": "name"
     },
     "alignLabels": true,
-    "valueIs": "height"
+    "valueIs": "height",
+    "colors": {
+      "list": [
+        "#9FAC0D",
+        "#E99336",
+        "#925530",
+        "#CA472B",
+        "#D08E4D",
+        "#7A902D",
+        "#B08052",
+        "#ECB034"
+      ]
+    }
   }]
 }
