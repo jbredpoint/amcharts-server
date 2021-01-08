@@ -1,0 +1,35 @@
+{
+  "type": "SankeyDiagram",
+  "nodes": {
+    "width": 30,
+    "stoke": "#fff",
+    "strokeWidth": 2,
+    "nameLabel": {
+      "locationX": 0.2,
+      "label": {
+        "fill": "#fff",
+        "fontWeight": "bold"
+      }
+    }
+  },
+  "data": [
+    { "from": "A", "to": "D", "value": 10, "nodeColor": "#672b1b" },
+    { "from": "B", "to": "D", "value": 8, "nodeColor": "#b19e4a" },
+    { "from": "B", "to": "E", "value": 4, "nodeColor": "#b19e4a" },
+    { "from": "C", "to": "E", "value": 3, "nodeColor": "#b19e4a" },
+    { "from": "D", "to": "G", "value": 5, "nodeColor": "#672b1b" },
+    { "from": "D", "to": "I", "value": 2, "nodeColor": "#672b1b" },
+    { "from": "D", "to": "H", "value": 3, "nodeColor": "#672b1b" },
+    { "from": "E", "to": "H", "value": 6, "nodeColor": "#b19e4a" },
+    { "from": "G", "to": "J", "value": 5, "nodeColor": "#b19e4a" },
+    { "from": "I", "to": "J", "value": 1, "nodeColor": "#b19e4a" },
+    { "from": "H", "to": "J", "value": 9, "nodeColor": "#672b1b" },
+    { "from": "J", "nodeColor": "#06D6A0" }
+  ],
+  "dataFields": {
+    "fromName": "from",
+    "toName": "to",
+    "value": "value",
+    "color": "nodeColor"
+  }
+}
