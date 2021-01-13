@@ -1,21 +1,89 @@
 {
-    "geodata": "usaLow",
+    "geodata": "usaHigh",
     "projection": "Miller",
     "series": [
         {
             "type": "MapPolygonSeries",
             "useGeodata": true,
+            "exclude": ["US-AK", "US-HI"],
             "mapPolygons": {
                 "tooltipText": "{name}",
-                "fill": "#6794dc",
-                "nonScalingStroke": true
-            },
-            "states": {
-                "hover": {
-                "properties": {
-                    "fill": "#367B25"
+                "fill": "#1482b8",
+                "nonScalingStroke": true,
+                "states": {
+                    "hover": {
+                        "properties": {
+                            "fill": "#69b2e4"
+                        }
+                    }
+                },
+                "propertyFields": {
+                    "fill": "fill"
                 }
-            }
+            },
+            "data": [
+                {
+                    "id": "US-CA",
+                    "name": "CALIFORNIA",
+                    "fill": "#9dce9e"
+                },
+                {
+                    "id": "US-NY",
+                    "name": "NEW YORK",
+                    "fill": "#9dce9e"
+                },
+                {
+                    "id": "US-TN",
+                    "name": "TENNESSEE",
+                    "fill": "#9dce9e"
+                }
+            ]
+        },
+        {
+            "type": "MapImageSeries",
+            "mapImages": {
+                "children": [
+                    {
+                        "type": "Circle",
+                        "radius": 4,
+                        "stroke" : "#ffe883",
+                        "strokeWidth": 3,
+                        "nonScaling": true,
+                        "tooltipText": "{title}"
+                    }
+                ],
+                "propertyFields": {
+                    "latitude": "latitude",
+                    "longitude": "longitude"
+                }
+            },
+            "data": [
+                { "latitude": 36.118997, "longitude": -86.683744, "title": "BNA" },
+                { "latitude": 40.643005, "longitude": -73.779162, "title": "JFK" },
+                { "latitude": 33.942093, "longitude": -118.421494, "title": "LAX" }
+            ]
+        },
+        {
+            "type": "MapLineSeries",
+            "mapLines": {
+                "line": {
+                    "stroke": "#ffe883",
+                    "strokeOpacity": 0.8,
+                    "strokeWidth": 3,
+                    "strokeDasharray": "10,3"
+                }
+            },
+            "data": [
+                {
+                    "multiGeoLine": [
+                        [
+                            { "latitude": 36.118997, "longitude": -86.683744 },
+                            { "latitude": 40.643005, "longitude": -73.779162 },
+                            { "latitude": 33.942093, "longitude": -118.421494 }
+                        ]
+                    ]
+                }
+            ]
         }
-    }
+    ]
 }
