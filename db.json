@@ -1,121 +1,61 @@
 {
-    "xAxes": [
-        {
-            "type":"CategoryAxis",
-            "dataFields": {
-                "category": "country"
-            },
-            "title": {
-                "text": "Local country offices"
-            },
-            "renderer": {
-                "grid": {
-                    "template": {
-                        "location": 0
-                    }
-                },
-                "minGridDistance": 20
-            }
-        }
-    ],
-    "yAxes": [
-        {
-            "type": "ValueAxis",
-            "title": {
-                "text": "Expenditure (M)"
-            }
-        }
-    ],
     "series": [
         {
-            "type": "ColumnSeries",
-            "dataFields": {
-                "valueY": "research",
-                "categoryX": "country"
+            "type":"PieSeries",
+            "dataFields":{
+                "value":"litres",
+                "category":"country"
             },
-            "name": "Research",
-            "tooltipText": "{name}: [bold]{valueY}[/]",
-            "stacked": true
-        },
-        {
-            "type": "ColumnSeries",
-            "dataFields": {
-                "valueY": "marketing",
-                "categoryX": "country"
-            },
-            "name": "Marketing",
-            "tooltipText": "{name}: [bold]{valueY}[/]",
-            "stacked": true
-        },
-        {
-            "type": "ColumnSeries",
-            "dataFields": {
-                "valueY": "sales",
-                "categoryX": "country"
-            },
-            "name": "Sales",
-            "tooltipText": "{name}: [bold]{valueY}[/]",
-            "stacked": true
+            "colors": {
+                "list": [
+                    "#E68081",
+                    "#E06667",
+                    "#DC4D4D",
+                    "#D63333",
+                    "#CC0000",
+                    "#B80000",
+                    "#A30000",
+                    "#900000"
+                ]
+	          }
         }
     ],
     "data":[
         {
-            "country": "Lithuania",
-            "research": 501.9,
-            "marketing": 250,
-            "sales": 199
-        }, {
-            "country": "Czech Republic",
-            "research": 301.9,
-            "marketing": 222,
-            "sales": 251
-        }, {
-            "country": "Ireland",
-            "research": 201.1,
-            "marketing": 170,
-            "sales": 199
-        }, {
-            "country": "Germany",
-            "research": 165.8,
-            "marketing": 122,
-            "sales": 90
-        }, {
-            "country": "Australia",
-            "research": 139.9,
-            "marketing": 99,
-            "sales": 252
-        }, {
-            "country": "Austria",
-            "research": 128.3,
-            "marketing": 85,
-            "sales": 84
-        }, {
-            "country": "UK",
-            "research": 99,
-            "marketing": 93,
-            "sales": 142
-        }, {
-            "country": "Belgium",
-            "research": 60,
-            "marketing": 50,
-            "sales": 55
-        }, {
-            "country": "The Netherlands",
-            "research": 50,
-            "marketing": 42,
-            "sales": 25
+            "country":"Lithuania",
+            "litres":501.9
+        },
+        {
+            "country":"Czech Republic",
+            "litres":301.9
+        },
+        {
+            "country":"Ireland",
+            "litres":201.1
+        },
+        {
+            "country":"Germany",
+            "litres":165.8
+        },
+        {
+            "country":"Australia",
+            "litres":139.9
+        },
+        {
+            "country":"Austria",
+            "litres":128.3
+        },
+        {
+            "country":"UK",
+            "litres":99
+        },
+        {
+            "country":"Belgium",
+            "litres":60
+        },
+        {
+            "country":"The Netherlands",
+            "litres":50
         }
-    ],
-    "colors": {
-        "list": [
-            "#4D8CCA",
-            "#337CC3",
-            "#1B6CBB",
-            "#005AB3",
-            "#1452A2",
-            "#10488F",
-            "#0D407D",
-            "#0A366B"
-        ]
-    }
+    ]
 }
