@@ -35,7 +35,11 @@
                 "categoryX": "country"
             },
             "name": "Research",
-            "tooltipText": "{name}: [bold]{valueY}[/]",
+            "columns": {
+                "template": {
+                    "tooltipText": "{name}: [bold]{valueY}[/]"
+                }
+            },
             "stacked": true
         },
         {
@@ -45,7 +49,11 @@
                 "categoryX": "country"
             },
             "name": "Marketing",
-            "tooltipText": "{name}: [bold]{valueY}[/]",
+            "columns": {
+                "template": {
+                    "tooltipText": "{name}: [bold]{valueY}[/]"
+                }
+            },
             "stacked": true
         },
         {
@@ -55,7 +63,11 @@
                 "categoryX": "country"
             },
             "name": "Sales",
-            "tooltipText": "{name}: [bold]{valueY}[/]",
+            "columns": {
+                "template": {
+                    "tooltipText": "{name}: [bold]{valueY}[/]"
+                }
+            },
             "stacked": true
         }
     ],
