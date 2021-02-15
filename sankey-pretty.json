@@ -1,0 +1,74 @@
+{
+  "type": "SankeyDiagram",
+  "paddingRight": 50,
+  "nodes": {
+    "template": {
+    	"width": 30,
+      "stoke": "#fff",
+      "strokeWidth": 2,
+      "draggable": false,
+      "inert": true,
+      "toggable": true,
+      "nameLabel": {
+        "locationX": 0.2,
+        "label": {
+          "fill": "#fff",
+          "fontWeight": "bold"
+        }
+      }
+    }
+  },
+  "minNodeSize": 0.001,
+  "data": [
+    { "from":"WEB", "nodeColor":"#d12405" },
+    { "from":"EMAIL", "nodeColor":"#1d5dc0" },
+    { "from": "Source", "to": "Total clicks", "value": 1768, "nodeColor": "#d12405" },
+    { "from": "Total clicks", "to": "Mobile", "value": 861, "nodeColor": "#1d5dc0" },
+    { "from": "Total clicks", "to": "Desktop", "value": 907, "nodeColor": "#d12405" },
+    { "from": "Mobile", "to": "Website", "value": 274, "nodeColor": "#d12405" },
+    { "from": "Mobile", "to": "App", "value": 586, "nodeColor": "#d12405" },
+    { "from": "Desktop", "to": "WEB", "value": 324, "nodeColor": "#1d5dc0" },
+    { "from": "Desktop", "to": "EMAIL", "value": 584, "nodeColor": "#d12405" },
+    { "from": "Website", "to": "WEB", "value": 74, "nodeColor": "#d12405" },
+    { "from": "Website", "to": "EMAIL", "value": 200, "nodeColor": "#1d5dc0" },
+    { "from": "App", "to": "Home", "value": 185, "nodeColor": "#d12405" },
+    { "from": "Home", "to": "WEB", "value": 60, "nodeColor": "#d12405" },
+    { "from": "Home", "to": "EMAIL", "value": 125, "nodeColor": "#d12405" },
+    { "from": "App", "to": "Returns", "value": 135, "nodeColor": "#d12405" },
+    { "from": "Returns", "to": "WEB", "value": 30, "nodeColor": "#d12405" },
+    { "from": "Returns", "to": "EMAIL", "value": 105, "nodeColor": "#d12405" },
+    { "from": "App", "to": "3rd Party", "value": 266, "nodeColor": "#d12405" },
+    { "from": "3rd Party", "to": "WEB", "value": 36, "nodeColor": "#d12405" },
+    { "from": "3rd Party", "to": "EMAIL", "value": 230, "nodeColor": "#d12405" },
+    { "from": "WEB", "nodeColor": "#d12405", "value": 524 },
+    { "from": "EMAIL", "nodeColor": "#1d5dc0", "value": 1244 }
+  ],
+  "dataFields": {
+    "fromName": "from",
+    "toName": "to",
+    "value": "value",
+    "color": "nodeColor"
+  },
+  "links": {
+    "template": {
+      "colorMode": "gradient",
+    	"fillOpacity": 1,
+      "strokeOpacity": 0.6,
+      "tension": 0.6,
+      "bullets": {
+        "label": {
+        	"propertyFields": {
+          	"text": "labelText"
+          },
+          "horizontalCenter": "left",
+          "textAlign": "start",
+          "dx": -50
+        },
+        "propertyFields": {
+      		"locationX": "labelLocation",
+        	"rotation": "labelRotation"
+      	}
+      }
+    }
+  }
+}
